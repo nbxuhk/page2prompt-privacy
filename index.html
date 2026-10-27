@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Page2Prompt</title>
+<style>
+  :root{
+    --paper:#f7f6f2;
+    --ink:#1d2321;
+    --muted:#5f6b67;
+    --line:#d9d6cc;
+    --teal:#123c3a;
+    --teal-soft:#e7eeec;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    font-size:16px;
+    line-height:1.72;
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:64px 28px 96px}
+  .eyebrow{
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--teal);font-weight:700;margin:0 0 14px
+  }
+  h1{font-size:34px;line-height:1.2;margin:0 0 18px;font-weight:750;letter-spacing:-.01em}
+  h2{
+    font-size:19px;margin:44px 0 12px;font-weight:700;
+    padding-bottom:8px;border-bottom:1px solid var(--line)
+  }
+  h3{font-size:16px;margin:24px 0 8px;font-weight:700}
+  p{margin:12px 0}
+  ul{margin:10px 0 10px 20px;padding:0}
+  li{margin:6px 0}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+  .summary{
+    background:var(--teal-soft);
+    border-left:3px solid var(--teal);
+    padding:18px 20px;margin:26px 0 8px
+  }
+  .summary p{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border:1px solid var(--line);vertical-align:top}
+  th{background:#efece3;font-weight:700}
+  code{
+    font-family:"Cascadia Mono",Consolas,monospace;font-size:.9em;
+    background:#eeeade;padding:1px 5px;border-radius:3px
+  }
+  a{color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+  .note{color:var(--muted);font-size:14px}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0}
+    a{color:inherit}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Page2Prompt · Privacy Policy</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: 27 October 2026 &nbsp;·&nbsp; Last updated: 27 October 2026 &nbsp;·&nbsp; Version 1.0</p>
+
+  <div class="summary">
+    <p><strong>Short version: nothing leaves your browser.</strong></p>
+    <p>Page2Prompt runs entirely on your device. It has no servers, no accounts, no analytics, no tracking and no cookies of its own. The only data it touches — the page you choose to convert, plus that page's title and URL — is read when you click the toolbar icon and is stored only in your browser. If you use Send to AI, that content goes to the service you picked, and nowhere else.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>Page2Prompt ("the extension", "we", "us") is a browser extension for Chrome and other Chromium-based browsers that converts the page you are viewing into Markdown suitable for large language models.</p>
+  <p>This policy explains what the extension does with information on your device. It applies to the extension and to this policy page only. It does not apply to third-party websites you choose to open, including AI chat services.</p>
+
+  <h2>2. What the extension does with page content</h2>
+  <p>When you click the Page2Prompt icon, the extension requests temporary access to the active tab, reads the article's content from the page, and converts it to Markdown locally. The conversion code — including the readability extractor and the Markdown converter — is bundled with the extension and runs on your device.</p>
+  <ul>
+    <li>Page content is processed in memory and is not transmitted anywhere.</li>
+    <li>The extension makes no network requests. There are no analytics, telemetry, crash-reporting or advertising SDKs.</li>
+    <li>Access is granted per click through Chrome's <code>activeTab</code> mechanism. The extension does not run on every page you visit and does not request access to all sites.</li>
+  </ul>
+
+  <h2>3. What is stored on your device</h2>
+  <table>
+    <tr><th>Storage</th><th>Content</th><th>Purpose</th></tr>
+    <tr>
+      <td><code>chrome.storage.sync</code></td>
+      <td>Preferences: preferred AI target, whether to include front matter, and similar settings.</td>
+      <td>Keeps your settings between sessions. If you are signed in to Chrome with sync enabled, Chrome — not Page2Prompt — may sync these settings to your other devices. We never see them.</td>
+    </tr>
+    <tr>
+      <td>IndexedDB (local)</td>
+      <td>Your last 50 clips: title, URL, timestamp, token estimate and the converted Markdown.</td>
+      <td>Powers the local clip history so you can search and re-export recent clips.</td>
+    </tr>
+  </table>
+  <p>Both stores live in your browser profile. You can delete individual clips, clear the whole history from the extension's History view, or remove all data by uninstalling the extension. We cannot access, retrieve or restore this data because it never reaches us.</p>
+
+  <h2>4. Clipboard</h2>
+  <p>When you press "Copy Markdown", the converted text is written to your system clipboard. The extension reads the clipboard only if a feature explicitly requires pasting, and it does not monitor or log clipboard contents. Clipboard access is triggered only by your action.</p>
+
+  <h2>5. Opening third-party AI services</h2>
+  <p>The "Send to AI" feature opens a new tab for the service you select — for example ChatGPT, Claude, Kimi or Gemini. For services that accept pre-filled input through a URL parameter, the converted text is included in that address, which means your browser sends it to the selected service when the page loads. For services that do not support pre-filling, the text is copied to your clipboard and you paste it yourself.</p>
+  <p>In both cases the transfer is initiated by you, one click at a time, and only to the service you picked. Page2Prompt has no server of its own and does not send your content anywhere else. Once a third-party page is open, that service's privacy policy and terms apply to what it receives.</p>
+
+  <h2>6. Permissions and why they are needed</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it is requested</th></tr>
+    <tr><td><code>activeTab</code></td><td>Grants temporary access to the current tab only after you click the extension icon, so the page can be read and converted.</td></tr>
+    <tr><td><code>scripting</code></td><td>Injects the bundled extraction script into that tab to read the article body and produce Markdown.</td></tr>
+    <tr><td><code>storage</code></td><td>Saves your preferences locally and keeps the optional clip history on your device.</td></tr>
+  </table>
+  <p>The extension does not request <code>host_permissions</code>, <code>tabs</code>, <code>history</code>, <code>cookies</code>, <code>webRequest</code> or any other sensitive permission.</p>
+
+  <h2>7. Data sharing, sale and transfer</h2>
+  <ul>
+    <li>We do not transmit, sell, rent, trade or transfer user data off your device.</li>
+    <li>We do not use or transfer user data for purposes unrelated to the extension's single purpose.</li>
+    <li>We do not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+    <li>We do not use user data for personalised advertising, profiling or retargeting.</li>
+  </ul>
+
+  <h2>8. Chrome Web Store data disclosure</h2>
+  <p>For transparency, this is how the extension maps to the Chrome Web Store data categories. "Local only" means the data is processed or stored on your device and is never transmitted to us or to any third party by the extension itself. The one exception is content you explicitly send to an AI service with the "Send to AI" button, which goes only to the service you selected.</p>
+  <table>
+    <tr><th>Category</th><th>Handled?</th><th>Details</th></tr>
+    <tr><td>Website content</td><td>Yes — local only</td><td>The text of the page you explicitly convert, read after you click the icon. Converted locally; the last 50 results are stored in local IndexedDB if you keep history.</td></tr>
+    <tr><td>Web history</td><td>Yes — local only</td><td>The title and URL of pages you choose to clip are saved in your local clip history so you can find them again. No browsing history is read or collected in the background.</td></tr>
+    <tr><td>Personally identifiable information</td><td>No</td><td>No account, no name, no email, no identifiers.</td></tr>
+    <tr><td>Health information</td><td>No</td><td>Not collected.</td></tr>
+    <tr><td>Financial and payment information</td><td>No</td><td>The extension is free and processes no payments.</td></tr>
+    <tr><td>Authentication information</td><td>No</td><td>No passwords, credentials or tokens are accessed.</td></tr>
+    <tr><td>Personal communications</td><td>No</td><td>Emails, messages and chats are not read.</td></tr>
+    <tr><td>Location</td><td>No</td><td>No GPS, IP-based or regional location is derived.</td></tr>
+    <tr><td>User activity</td><td>No</td><td>No clicks, keystrokes, mouse movement or network monitoring.</td></tr>
+  </table>
+
+  <h2>9. Chrome Web Store Limited Use disclosure</h2>
+  <p>Page2Prompt's use of information received from Chrome APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use/" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Data accessed through browser APIs is used only to provide the extension's single purpose: converting the page you are viewing into Markdown on your device.</p>
+
+  <h2>10. Security</h2>
+  <p>Because no data is transmitted, there is no server-side store to breach. All code that handles page content ships inside the extension package; the extension does not load or execute remote code. You can inspect the package contents in <code>chrome://extensions</code> at any time.</p>
+
+  <h2>11. Children</h2>
+  <p>The extension is a developer productivity tool and is not directed to children under 13. We do not knowingly collect information from anyone, including children.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If the extension's data practices change — for example, if an optional cloud sync feature is introduced — this policy will be updated before that feature ships, and the effective date above will change. Material changes will also be noted in the extension's changelog and on its store listing.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions about this policy or the extension's data practices can be raised at <a href="https://github.com/nbxuhk" rel="noopener">github.com/nbxuhk</a>.</p>
+
+  <h2 lang="zh-CN">中文摘要</h2>
+  <div lang="zh-CN">
+    <p>Page2Prompt 是一个纯本地运行的网页转 Markdown 扩展。它没有服务器、没有账号体系、没有统计埋点、没有广告 SDK，也不会上传任何页面内容。</p>
+    <ul>
+      <li>只有在你点击工具栏图标时，扩展才通过 <code>activeTab</code> 临时读取当前页面，并在你的设备上完成转换。</li>
+      <li>偏好设置保存在浏览器本地存储；最近 50 条剪藏记录保存在本地 IndexedDB，可随时在「历史」中删除或卸载扩展一并清除。</li>
+      <li>「发送到 AI」只会打开你选择的第三方站点；内容是否提交给对方，由你决定，并受该站点自身隐私政策约束。</li>
+      <li>扩展不申请全站访问权限，不读取浏览历史、Cookie 或网络请求。</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>Page2Prompt · Privacy Policy · Effective 27 October 2026</p>
+    <p class="note">This page is the canonical privacy policy referenced by the Chrome Web Store and Microsoft Edge Add-ons listings.</p>
+  </footer>
+
+</div>
+</body>
+</html>
